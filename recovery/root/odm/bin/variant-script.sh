@@ -28,6 +28,15 @@ set_vibrator_props() {
 # Variant-specific configuration
 #-------------------------------------------------
 case "$variant" in
+"annibale")
+    model="$base_name F8P"
+    resetprop ro.twrp.device_version "Poco_F8_Pro"
+    resetprop ro.twrp.y_offset "111"
+    resetprop ro.twrp.h_offset "-111"
+    resetprop vendor.display.enable_spr "1"
+    set_vibrator_props "170" "35" "/sys/class/qcom-haptics" "agm"
+    ;;
+
 "dada")
     model="$base_name 15"
     resetprop ro.twrp.device_version "Xiaomi_15"
