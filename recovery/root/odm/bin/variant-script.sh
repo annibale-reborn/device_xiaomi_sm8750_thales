@@ -33,7 +33,6 @@ case "$variant" in
     resetprop ro.twrp.device_version "Poco_F8_Pro"
     resetprop ro.twrp.y_offset "111"
     resetprop ro.twrp.h_offset "-111"
-    resetprop vendor.display.enable_spr "1"
     set_vibrator_props "170" "35" "/sys/class/qcom-haptics" "agm"
     ;;
 
